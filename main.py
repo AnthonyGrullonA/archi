@@ -135,7 +135,7 @@ def deploimentaig():
     os.system("pacman -S grub efibootmgr os-prober")
     os.system("grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=Arch")
     os.system("grub-install --target=x86_64-efi --efi-directory=/efi --removable")
-    os.system("nano /etc/default/grup")
+    os.system("nano /etc/default/grub")
     os.system("grub-mkconfig -o /boot/grub/grub.cfg")
     os.system("ls /boot/")
     input("Presione enter para volver a menu...")
